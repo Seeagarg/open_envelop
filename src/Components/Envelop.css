@@ -9,7 +9,7 @@ body{
     position: relative;
     margin-inline: 10px;
     margin-block: 15%;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 
@@ -50,7 +50,7 @@ body{
     position: absolute;
     border-right: 110px solid #f4978e;
     border-top: 53px solid transparent;
-    border-bottom: 33px solid transparent;
+    border-bottom: 34px solid transparent;
     left: 60px;
     top: 0px;
     width: 0;
@@ -65,9 +65,9 @@ body{
     position: absolute;
     content: '';
     border-left: 170px solid #fda996;
-    border-top: 85px solid transparent;
+    border-top: 86px solid transparent;
     left: -60px;
-    top: -53px;
+    top: -52.5px;
 }
 
 .card{
@@ -117,14 +117,14 @@ body{
 
 
 
-@keyframes up{
+/* @keyframes up{
     0% ,100%{
         transform: translateY(0);
     }
     50%{
         transform: translateY(-30px);
     }
-}
+} */
 
 /* .outer::before{
     content: '';
@@ -140,13 +140,13 @@ body{
 } */
 
 
-@keyframes scale {
+/* @keyframes scale {
     0%,100%{
         transform: scaleX(1)
     }
     50%{
         transform: scaleX(.85);
     }
-}
+} */
 
 

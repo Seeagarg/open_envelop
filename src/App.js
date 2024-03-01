@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Envelop from './Components/Envelop';
+import { motion } from 'framer-motion';
 
 function App() {
  
@@ -14,7 +15,13 @@ function App() {
     <div className='app'>
     {
       arr.map((text,index)=>(
+        <motion.div
+         initial={{ x: "100px" }}
+  animate={{ x: "0" }}
+  loop={true}
+        >
         <Envelop text = {text} />
+        </motion.div>
       ))
     }
     </div>
