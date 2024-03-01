@@ -9,21 +9,22 @@ body{
     position: relative;
     margin-inline: 10px;
     margin-block: 15%;
+    margin-top: 60px;
 }
 
 
 
 .outer{
     position: relative;
-    top: 50px;
+    /* top: 50px; */
     cursor: pointer;
-    animation: up 3s linear infinite;
+    /* animation: up 3s linear infinite; */
 }
 
 .envelop{
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 170px;
+    height: 80px;
     background-color: #f08080;
     display: grid;
     place-items: center;
@@ -32,40 +33,47 @@ body{
 .envelop::before{
     content: '';
     position: absolute;
-    width: 212px;
-    height: 212px;
+    width: 120px;
+    height: 120px;
     background: #f08080;
     transform: rotate(45deg);
-    top: -105px;
-    left: 44px;
+    top: -60px;
+    left: 25px;
     border-radius: 30px 0 0 0;
 }
 
+
+
+
+
 .front{
     position: absolute;
-    border-right: 180px solid #f4978e;
-    border-top: 95px solid transparent;
-    border-bottom: 100px solid transparent;
-    left: 120px;
-    top: 5px;
+    border-right: 110px solid #f4978e;
+    border-top: 53px solid transparent;
+    border-bottom: 33px solid transparent;
+    left: 60px;
+    top: 0px;
     width: 0;
     height: 0;
     z-index: 10;
 }
 
+
+
+
 .front::before{
     position: absolute;
     content: '';
-    border-left: 300px solid #fda996;
-    border-top: 195px solid transparent;
-    left: -120px;
-    top: -95px;
+    border-left: 170px solid #fda996;
+    border-top: 85px solid transparent;
+    left: -60px;
+    top: -53px;
 }
 
 .card{
     position: relative;
-    width: 250px;
-    height: 180px;
+    width: 150px;
+    height: 70px;
     background-color: #fff;
     border-radius: 2px;
     display: grid;
@@ -74,16 +82,13 @@ body{
 }
 
 
-
-
-
 .card::before{
     content:'';
     position: absolute;
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    bottom: 10px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
     border:2px solid #003049;
     border-style: dashed;
 }
@@ -91,48 +96,25 @@ body{
 
 
 
-.outer:active .card{
-    transform: translateY(-100px);
+/* .outer:active .card{
+    transform: translateY(-50px);
+} */
+
+.active{
+    transform: translateY(-50px);
 }
+
+
 
 .card .text{
     font-family: cursive;
-    font-size: 28px;
+    font-size: 10px;
     text-align: center;
     line-height: 25px;
     color: #003049;
 }
 
-/* .card .heart{
-    position: relative;
-    width: 35px;
-    height: 35px;
-    background-color: red;
-    bottom: 20px;
-    transform: rotate(45deg);
-    border-radius: 50% 0 0 50%;
-} */
 
-/* .card .heart::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: red;
-    border-radius: 0 50% 50% 0;
-    right: 0;
-    transform: rotate(-90deg);
-    transform-origin: top;
-} */
-
-/* .card .heart::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: red;
-    right: -18px;
-} */
 
 
 @keyframes up{
@@ -166,3 +148,5 @@ body{
         transform: scaleX(.85);
     }
 }
+
+

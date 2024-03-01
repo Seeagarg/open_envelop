@@ -4,7 +4,7 @@ import Envelop from './Components/Envelop';
 
 function App() {
  
-  const arr=["Hello I am Seea","Hello Guys","Congratulations You won","You got 5 Rupee","Another Try","give you another Chance","Hello Guys",,"Hello Guys",]
+  const arr=["Hello I am Seea","Hello Guys","Congratulations You won","You got 5 Rupee","Another Try","give you another Chance","Hello Guys",,"Hello Guys","Hello I am Seea","Hello Guys","Congratulations You won","You got 5 Rupee","Another Try"]
 
   return (
     <div className='main'>
@@ -14,7 +14,7 @@ function App() {
     <div className='app'>
     {
       arr.map((text,index)=>(
-        <Envelop text = {text} style={{marginTop:"10%"}}/>
+        <Envelop text = {text} />
       ))
     }
     </div>
